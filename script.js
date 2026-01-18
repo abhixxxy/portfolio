@@ -229,4 +229,44 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }
+    // ---------------------------------------------------------
+    // 8. Typing Animation
+    // ---------------------------------------------------------
+    const typingElement = document.getElementById('typing-text');
+    const textToType = "Full Stack Developer | Building Web Apps & APIs";
+    let charIndex = 0;
+
+    function typeText() {
+        if (charIndex < textToType.length) {
+            typingElement.textContent += textToType.charAt(charIndex);
+            charIndex++;
+            setTimeout(typeText, 100);
+        }
+    }
+
+    if (typingElement) {
+        setTimeout(typeText, 1000); // Start after 1s delay
+    }
+
+    // ---------------------------------------------------------
+    // 9. Back to Top Button
+    // ---------------------------------------------------------
+    const backToTopBtn = document.querySelector('.back-to-top');
+
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 300) {
+            backToTopBtn.classList.add('visible');
+        } else {
+            backToTopBtn.classList.remove('visible');
+        }
+    });
+
+    backToTopBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+
 });

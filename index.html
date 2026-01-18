@@ -25,6 +25,13 @@
 <body>
     <div class="background-glow"></div>
 
+    <div class="floating-elements">
+        <span class="float-icon" style="left: 10%; animation-delay: 0s;">{ }</span>
+        <span class="float-icon" style="left: 80%; animation-delay: 2s;">&lt;/&gt;</span>
+        <span class="float-icon" style="left: 40%; animation-delay: 5s;">JS</span>
+        <span class="float-icon" style="left: 60%; animation-delay: 8s;">#</span>
+    </div>
+
     <nav class="navbar">
         <div class="logo">Abhishek.dev</div>
         <ul class="nav-links">
@@ -67,7 +74,7 @@
             <div class="hero-content">
                 <div class="badge">Available for hire</div>
                 <h1 class="hero-title">Hi, I'm <span class="gradient-text">Abhishek Chavan</span></h1>
-                <p class="hero-tagline">Full Stack Developer | Building Web Apps & APIs</p>
+                <p class="hero-tagline"><span id="typing-text"></span><span class="cursor">&nbsp;</span></p>
                 <p class="hero-description">
                     Strong proficiency in JavaScript and TypeScript. Experienced in building backend systems
                     using Node.js, Express.js/Fastify, and RESTful APIs.
@@ -396,6 +403,13 @@
             <p class="footer-tag">Built with HTML, CSS, & Vanilla JS</p>
         </div>
     </footer>
+
+    <a href="#home" class="back-to-top" aria-label="Back to Top">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M18 15l-6-6-6 6" />
+        </svg>
+    </a>
 
     <script src="script.js"></script>
 </body>
