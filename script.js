@@ -233,7 +233,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // 8. Typing Animation
     // ---------------------------------------------------------
     const typingElement = document.getElementById('typing-text');
-    const textToType = "Full Stack Developer | Building Web Apps & APIs";
+    const textToType = "Full Stack Developer | Building Web Apps & APIs | Python | AI/ML";
     let charIndex = 0;
 
     function typeText() {
